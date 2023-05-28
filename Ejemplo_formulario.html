@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<form name="EjemploFormulario" action="mailto:raul.rodriguez@universidad.es" method="post">
+    <!---para poner la cajita que lo rodea tienes que poner fieldset-->
+<form>
+    <!--legend para poner el titulo como en tablas el caption--->
+<legend align="center">Registro evento Intel VS AMD</legend>
+
+<fieldset>
+
+<legend >Datos personales</legend>
+Nombre: <input type="text" name="" id=""required>
+<br>Apellidos <input type="text" name="" id=""required>
+<br> Telefono<input type="text" name="" id=""required>
+<br>Dirección Postal <input type="text" name="" id=""required>
+<br> Mail <input type="email" name="" id=""required>
+ <!--maxlength para limitar el texto a 10 letras por ej--->
+<br>DNI <input type="text" name="" id="" maxlength="10"required>
+<br>Fecha de nacimiento <input type="date" name="" id=""required> 
+</fieldset>
+
+<fieldset>
+
+    <legend >Datos Estudiante</legend>
+   
+    <br>Numero de expediente <input type="text" name="" id="" maxlength="8">
+    <!--si metes dos br se separa mas--->
+    <br><br> <input list="titulacion">
+    <datalist id="titulacion">
+        <option value="ASIR">ASIR</option>
+        <option value="DAM">DAM</option>
+        <option value="DAW">DAW</option>
+        <option value="A3D">A3D</option>
+    </datalist>
+    </fieldset>
+
+
+    <fieldset>
+
+        <legend >Genero</legend>
+        <br> <input type="radio" name=" genero" value="H"> Hombre
+        <br> <input type="radio" name=" genero" value="M"> Mujer
+        <br> <input type="radio" name=" genero" value="O"> Otro
+        
+        </fieldset>
+
+
+        <fieldset>
+
+            <legend >Otra información</legend>
+            Password: <input type="password"> 
+            Repetir contraseña: <input type="password" minlength="4" maxlength="8"> 
+            <br> Introducir Acreditación: <input type="file" name="adjunto" accept=".jpg, .png, .pdf">
+            
+            </fieldset>
+
+           <br> <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+            
+</fieldset>
+
+</form>
+
+
+
+</body>
+</html>

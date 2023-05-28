@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!---el post es para que cuando le das al metodo post que no muestre la informacion que le has metido arriba en la url
+    el action es para enviar la informacion que estas guardando-->
+<form name="formulario" method="post"  action=" mailto:raul.rodriguez@universidadeuropea.es">
+    <!--input: nos permite introducir informacion en nuestro formulario
+        tiene etiqueta de apertura pero NO de cierre
+        podemos introducir valores tales como texto num fechas...--->
+    Nombre <input type="text">
+   <p> Apellido <input type="text"></p>
+   <p>Fecha de la cita medica<input type="date" name="fecha" id=""></p>
+   <p>Email<input type="email" name="" id=""></p>
+   <p>Telefono <input type="tel" name="" id=""> </p>
+   <!--rest es para borrar y submit para enviar-->
+   <input type="submit" value="clickea aqui">
+   <input type="rest" value="borrar">
+
+   <p><input type="password" name="" id=""></p>
+        <hr>
+Sistemas Operativos:
+
+<!--lo que permite el radio es que puedas seleccionar uno u otro (con radio solo puedes elegir uno)-->
+ <input type="radio" name="SO" value="Windows" id=""> Window
+ <input type="radio" name="SO" value="Linux"id="">Linux
+ <input type="radio" name="SO"value="Macos" id="">MacOS
+
+<br>
+Titulaciones:
+<!--CON EL TIPO CHECKBOX puedes seleccionar varios(no solo uno)-->
+ <input type="checkbox" name="titulacion" value="ESO" id=""> ESO
+ <input type="checkbox" name="titulacion" value="BACH"id="">BACHILLER
+ <input type="checkbox" name="titulacion"value="GM" id="">GRADO MEDIO
+ <input type="checkbox" name="titulacion"value="GS" id="">GRADO SUPERIOR
+
+
+</form>
+
+</body>
+</html>
